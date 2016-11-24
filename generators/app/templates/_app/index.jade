@@ -1,0 +1,58 @@
+html
+  head
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(app) styles/vendor.css -->
+    <!-- bower:css -->
+
+    link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css")
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({app,.tmp}) styles/main.css -->
+
+    link(rel="stylesheet" href="styles/main.css")
+
+    <!-- endbuild -->
+  body(ng-app="angularApp")
+
+    .header
+      .navbar.navbar-default(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#js-navbar-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#/') Angular App
+          #js-navbar-collapse.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#/') Home
+              li
+                a(ng-href='#/') About
+              li
+                a(ng-href='#/') Contact
+    .container
+      div(ng-include="'views/main.html'", ng-controller='MainCtrl')
+    .footer
+      .container
+        p
+          span.glyphicon.glyphicon-heart
+          | from the Yeoman team test hzb
+
+    <!-- build:js(app) scripts/vendor.js -->
+    <!-- bower:js -->
+
+    script(src="bower_components/jquery/dist/jquery.js")
+    script(src="bower_components/angular/angular.js")
+    script(src="bower_components/bootstrap/dist/js/bootstrap.js")
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+    script(src="scripts/app.js")
+    script(src="scripts/controllers/main.js")
+
+    <!-- endbuild -->
