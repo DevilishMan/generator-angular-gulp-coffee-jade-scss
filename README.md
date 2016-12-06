@@ -23,6 +23,15 @@ yo angular-gulp-coffee-jade-scss
  * Yeoman can be too opinionated at times but is easily convinced not to be.
  * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
+## Run the app
+ * npm install
+ * bower install
+ * gulp server
+
+## How to package?
+ * gulp
+ * Run gulp serve:prod to see after package.
+
 ## License
 
  © [HuangZhiBiao](https://github.com/a459295360)
