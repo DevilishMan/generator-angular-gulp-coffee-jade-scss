@@ -162,12 +162,12 @@ gulp.task('test', ['start:server:test'], function () {
 
 // inject bower components
 gulp.task('bower', function () {
-  return gulp.src(paths.views.main)
+  return gulp.src(yeoman.app + '/index.jade')
     .pipe(wiredep({
-      directory: yeoman.app + '/bower_components',
-      ignorePath: '..'
+      directory: "./"+ yeoman.app + '/bower_components',
+      ignorePath: './app'
     }))
-  .pipe(gulp.dest(yeoman.tmp));
+  .pipe(gulp.dest(yeoman.app));
 });
 
 ///////////

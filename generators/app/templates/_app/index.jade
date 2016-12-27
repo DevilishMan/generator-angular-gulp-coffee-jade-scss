@@ -1,18 +1,15 @@
 html
   head
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(app) styles/vendor.css -->
-    <!-- bower:css -->
-
-    link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css")
-
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css({app,.tmp}) styles/main.css -->
+    // build:css(app) styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css({app,.tmp}) styles/main.css
 
     link(rel="stylesheet" href="styles/main.css")
 
-    <!-- endbuild -->
+    // endbuild
   body(ng-app="angularApp")
 
     .header
@@ -41,18 +38,18 @@ html
           span.glyphicon.glyphicon-heart
           | from the Yeoman team test hzb
 
-    <!-- build:js(app) scripts/vendor.js -->
-    <!-- bower:js -->
+    // build:js(app) scripts/vendor.js
+    // bower:js
 
     script(src="bower_components/jquery/dist/jquery.js")
     script(src="bower_components/angular/angular.js")
     script(src="bower_components/bootstrap/dist/js/bootstrap.js")
 
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    // endbower
+    // endbuild
+    // build:js({.tmp,app}) scripts/scripts.js
 
     script(src="scripts/app.js")
     script(src="scripts/controllers/main.js")
 
-    <!-- endbuild -->
+   // endbuild
